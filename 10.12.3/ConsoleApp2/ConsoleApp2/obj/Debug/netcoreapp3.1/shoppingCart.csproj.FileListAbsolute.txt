@@ -1,0 +1,13 @@
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.exe
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.deps.json
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.runtimeconfig.json
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.runtimeconfig.dev.json
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.dll
+D:\10.12.3\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\shoppingCart.pdb
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.AssemblyInfoInputs.cache
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.AssemblyInfo.cs
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.csproj.CoreCompileInputs.cache
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.dll
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.pdb
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.genruntimeconfig.cache
+D:\10.12.3\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\shoppingCart.csprojAssemblyReference.cache

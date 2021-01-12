@@ -1,0 +1,128 @@
+#header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    z-index: 100;
+    height: 60px;
+
+    background: #333;
+
+    opacity: 0.9;
+    box-shadow: 0 0 5px #000;
+}
+.header-logo{
+    text-align: center;
+}
+.header-logo__img{
+   display: inline;
+}
+.header-logo__name{
+   display: inline;
+   color: #fff;
+   font-weight: normal;
+}
+.header-nav__menu{
+    text-align: center;
+    line-height: 58px;
+    
+}
+.header-nav__menu a{
+    color: #fff;
+    font-size: 18px;
+}
+.header-nav__menu li:hover{
+    background: #026873;
+    /* 过渡效果 */
+    transition: all 1000ms linear 100ms;
+}
+/*  */
+@font-face{
+    font-family: "glyhicons";
+    src: url("./MGP素材/fonts/glyphicons-regular.eot");
+    src: url("./MGP素材/fonts/glyphicons-regular.svg"),
+    url("./MGP素材/fonts/glyphicons-regular.ttf"),
+    url("./MGP素材/fonts/glyphicons-regular.woff");
+    
+
+}
+.icon{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    
+}
+.icon::before{
+    font-family: "glyhicons";
+    content: "\e021";
+
+}
+.icon-shop::before{
+    font-family: "glyhicons";
+    content: "\e021";
+}
+.icon-about::before{
+    font-family: "glyhicons";
+    content: "\e265";
+}
+.icon-home::before{
+    font-family: "glyhicons";
+    content: "\e245";
+}
+.icon-get::before{
+    font-family: "glyhicons";
+    content: "\e281";
+}
+.header-login{
+    width: 250px;
+    background: #000;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.header-login a{
+    color: #808080;
+    font-size: 14px;
+}
+.header-login a:hover{
+    color: #fff;
+}
+.icon-login:before{
+    font-family: "glyhicons";
+    content:"\e004" ;
+}
+.icon-car:before{
+    font-family: "glyhicons";
+    content:"\e203" ;
+}
+.icon-search:before{
+    font-family: "glyhicons";
+    content:"\e028" ;
+}
+#content{
+    width: 85%;
+    margin: 0 auto;
+}
+.content-banner-box{
+    margin-top: 70px;
+}
+body{
+    background:linear-gradient(to bottom,#899678,#fff);
+    height: 2000px;
+}
+.content-banner_link{
+    display: inline-block;
+    box-shadow: 0 0 10px #000;
+    margin-top: 10px;
+    height: 370px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content-banner_link img{
+    width: 100%;
+    height: 100%;
+}

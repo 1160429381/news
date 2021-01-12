@@ -1,0 +1,65 @@
+
+            
+        *{
+             margin: 0;
+             padding: 0;
+         }
+         a{
+             text-decoration: none;
+             color: #000;
+         }
+         ul li{
+             list-style: none;
+         }
+         /* 系统编写 */
+         /* 写行  grid=>网格意思 */
+         .grid{
+             /*  */
+             display: flex;
+            /*  */
+             flex-flow: row nowrap;
+         }
+         /* 1.*/ 
+         .grid-cell-1,
+         .grid-cell-2,
+         .grid-cell-3,
+         .grid-cell-4,
+         .grid-cell-5,
+         .grid-cell-6
+         {
+             /* 2. */
+             flex-shrink: 1;
+             
+         }
+         /* 3. 每个单元格占比*/
+         .grid-cell-1{
+             /* 占一份单元格 */
+             /* 扩展比例 */
+             flex-grow: 1;
+         }
+         .grid-cell-2{
+             /* 占二份单元格 */
+             /* 扩展比例 */
+             flex-grow: 2;
+         }
+         .grid-cell-3{
+             /* 占三份单元格 */
+             /* 扩展比例 */
+             flex-grow: 3;
+         }
+         .grid-cell-4{
+             /* 占四份单元格 */
+             /* 扩展比例 */
+             flex-grow: 4;
+         }
+         .grid-cell-5{
+             /* 占五份单元格 */
+             /* 扩展比例 */
+             flex-grow: 5;
+         }
+         .grid-cell-6{
+             /* 占六份单元格 */
+             /* 扩展比例 */
+             flex-grow: 6;
+         }
+    

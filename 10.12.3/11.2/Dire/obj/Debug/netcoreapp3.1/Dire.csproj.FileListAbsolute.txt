@@ -1,0 +1,13 @@
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.exe
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.deps.json
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.runtimeconfig.json
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.runtimeconfig.dev.json
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.dll
+C:\Users\stutest\Desktop\11.2\Dire\bin\Debug\netcoreapp3.1\Dire.pdb
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.csprojAssemblyReference.cache
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.AssemblyInfoInputs.cache
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.AssemblyInfo.cs
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.csproj.CoreCompileInputs.cache
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.dll
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.pdb
+C:\Users\stutest\Desktop\11.2\Dire\obj\Debug\netcoreapp3.1\Dire.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.csprojAssemblyReference.cache
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.AssemblyInfoInputs.cache
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.AssemblyInfo.cs
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.exe
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.deps.json
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.runtimeconfig.json
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.runtimeconfig.dev.json
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.dll
+D:\10.12.3\generic\generic\bin\Debug\netcoreapp3.1\generic.pdb
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.dll
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.pdb
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.genruntimeconfig.cache
+D:\10.12.3\generic\generic\obj\Debug\netcoreapp3.1\generic.csproj.CoreCompileInputs.cache

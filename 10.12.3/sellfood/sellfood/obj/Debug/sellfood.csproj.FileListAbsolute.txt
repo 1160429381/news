@@ -1,0 +1,10 @@
+D:\10.12.3\sellfood\sellfood\bin\Debug\sellfood.exe.config
+D:\10.12.3\sellfood\sellfood\bin\Debug\sellfood.exe
+D:\10.12.3\sellfood\sellfood\bin\Debug\sellfood.pdb
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.csprojAssemblyReference.cache
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.Form1.resources
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.Properties.Resources.resources
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.csproj.GenerateResource.cache
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.csproj.CoreCompileInputs.cache
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.exe
+D:\10.12.3\sellfood\sellfood\obj\Debug\sellfood.pdb

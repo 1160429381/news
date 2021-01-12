@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace WindowsFormsApp4
+{
+    public class DBHelper
+    {
+       
+        string conString = @"server=307学生-0014\SQLEXPRESS;initial catalog=GameBoxDB;integrated Security=true";
+
+        SqlConnection con;
+        public void Open()
+        {
+          
+            if (con == null)
+            {
+                con = new SqlConnection(conString);
+            }
+           
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+        }
+        public void Close()
+        {
+           
+            if (con == null)
+            {
+                return;
+            }
+           
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+        public SqlDataReader GetData(string sql)
+        {
+            con = new SqlConnection(conString);
+          
+            con.Open();
+
+            
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            return reader;
+        }
+        public DataSet Getdataset(string sql)
+        {
+            Open();
+            SqlDataAdapter ada = new SqlDataAdapter(sql, con);
+            DataSet ds = new DataSet();
+            ada.Fill(ds);
+            Close();
+            return ds;
+        }
+        public int UpdateData(string sql)
+        {
+           
+            Open();
+          
+            SqlCommand cmd = new SqlCommand(sql, con);
+            int result = cmd.ExecuteNonQuery();
+            return result;
+        }
+    }
+}
