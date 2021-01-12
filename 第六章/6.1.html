@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery使用</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <img src="./banner2.png" alt="" id="img">
+    <input type="button" value="显示图片" id="show">
+    <input type="button" value="隐藏图片" id="hide">
+    <style>
+        .color{
+            color: red;
+        }
+    </style>
+    <h3>娱乐项目</h3>
+    <ul>
+        <li>鲜花</li>
+        <li>游戏</li>
+        <li>旅游</li>
+        <li>酒店</li>
+        <li>新闻</li>
+    </ul>
+    <!-- jquery实现图片显示和隐藏 -->
+    <script>
+        // function $(obj){
+        //     if(typeof obj=="function")
+        // }else if()
+        $(function(){
+            $("#show").click(function(){
+                $("#img").show(1000);
+            }
+            )
+            $("#hide").click(function(){
+                $("#img").hide(2000);
+            }
+            )
+            $("h3").click(function(){
+                $(this).toggleClass("color").next("ul").toggle(1000).css("font-size","38px");
+            })
+        })
+    </script>
+</body>
+</html>

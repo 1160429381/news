@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论功能</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 30px;
+        }
+        .color{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span class="user">张三：</span>今天天气不错！
+        <p>
+            <input type="text" name="" id="txt">
+            <input type="button" value="评论">
+        </p>
+        <p class="color"></p>
+        <div class="content">
+            <ul>
+                <li>王五评论：我也觉得！</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $(":button").click(function(){
+                var txt=$("#txt").val();
+                if(txt=="")
+                {
+                    $(".color").text("请输入内容!");
+                    //让光标显示在对应的表单里面去
+                    $("#txt").focus();
+                    return;
+                }
+                //获取内容回来新增一条记录下来
+                $("<li>李四："+txt+"</li>").prependTo(".content ul");
+                $("#txt").val("");
+            });
+            $("#txt").blur(function(){
+                if($(this).val() !="")
+                {
+                    //让提示文案变为空字符串
+                    $(".color").text("");
+                }
+            })
+        });
+    </script>
+</body>
+</html>

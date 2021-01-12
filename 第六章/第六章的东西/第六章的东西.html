@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        /* img
+        {
+            display: none;
+            height: 200px;
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <img src="./b151f8198618367a60c4049c2b738bd4b31ce526.gif" alt="" class="pic">
+    <p>
+        <input type="button" value="显示" id="btnShow">
+        <input type="button" value="隐藏" id="btnHidden">
+    </p> -->
+    <p>
+        请选择：<br>
+        <input type="checkbox" name="songs">小心眼
+        <input type="checkbox" name="songs">赔钱
+        <input type="checkbox" name="songs">要命
+        <input type="checkbox" name="songs">狗屎
+
+    </p>
+
+    <input type="button" value="全选">
+    <script>
+
+        // $(function(){
+        //     $("#btnShow").click(function(){
+        //         $(".pic:hidden").show().addClass("current");
+        //     });
+
+        //     $("#btnHidden").click(function(){
+        //         $(".pic:visible").hide();
+        //     });
+
+        // })
+
+
+        $(function(){
+
+            $("input[type='button']").click(function(){
+
+                $("input[name='songs']").attr("checked","checked");
+            });
+
+        });
+
+    </script>
+    
+</body>
+</html>

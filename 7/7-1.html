@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM对象</title>
+</head>
+<body>
+    <div id="box"></div>
+    <h1>文字标题</h1>
+    <!-- 引入js库才能使用jQuery -->
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        //js中获取一个元素的格式
+        var id=document.getElementById("id名称");
+        //下面的选择都是获取到多个标签 getElements
+        var className=document.getElementsByClassName("里面是类名");
+        var tagName=document.getElementsByName("标签名称");
+        //表单的name值获取
+        var name=document.getElementsByName("表单的name值");
+
+    //     function $()
+    //   {
+          
+    //   }
+       var obj= $("#box");
+       //
+       $(function(){
+         $("h1").click(function(){
+        //    this.style.color="red";
+           $(this).css({
+               "color":"red"
+           });
+        });
+       });
+      
+    </script>
+</body>
+</html>

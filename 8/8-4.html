@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        img{
+            position: relative;
+        }
+        .box{
+            width: 1px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="./3.gif" alt="">
+    <input type="button" value="动画开始" id="btn">
+    <input type="button" value="按钮" id="but">
+    <div class="box">1</div>
+    <script>
+        $("#btn").click(function(){
+            $("img").animate({
+                "width":"500px",
+                "height":"600px",
+                "opacity":0.8,
+                "left":"200px",
+                "top":"100px"
+            },1000)
+        });
+        $(".box").mouseover(function(){
+            $(this).animate({"width":"1000px"},500)
+            $(this).animate({"height":"100px"},500)
+            $(this).animate({"width":"300px"},500)
+            $(this).animate({"height":"600px"},500)
+        });
+        $("#but").click(function(){
+            $(".box").stop(true,true);
+        })
+    </script>
+</body>
+</html>

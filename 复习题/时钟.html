@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时钟效果</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        setInterval(function(){
+            var date=new Date();
+            with(date)
+            {
+                    //年
+                var year=getFullYear();
+                    //月
+                var month=getMonth()+1;
+                    //日
+                var day=getDate();
+                    //时
+                var hour=getHours();
+                    //分
+                var minutes=check(getMinutes());
+                    //秒
+                var seconds=check(getSeconds());
+            }
+        
+
+        var time=year=year+"年"+month+"月"+day+"日"+""+hour+":"+minutes+":"+seconds;
+        $("#box").text(time);
+        },1000);
+       function check(num)
+       {
+           if(num<10)
+           {
+               num="0"+num;
+           }
+           return num;
+       }
+    </script>
+</body>
+</html>

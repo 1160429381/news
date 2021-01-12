@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层次选择器</title>
+</head>
+<body>
+    <input type="button" value="按钮"> 
+    <input type="text" name="" id=""> 
+    <div class="box">
+        <a href="">链接1</a>
+        <a href="">链接2</a>
+        <a href="">链接3</a>
+    </div>
+    <div class="box2">
+        <p>111</p>
+        <p>222</p>
+    </div>
+    <h2>哈哈哈</h2>
+    <dl>
+        <dt>1111</dt>
+    </dl>
+    <dl>
+        <dt>222</dt>
+    </dl>
+    <dl>
+        <dt>333</dt>
+    </dl>
+    <!-- 属性过滤选择器 -->
+    爱好: <input type="checkbox" name="" id="" checked>足球 <input type="checkbox" name="" id="">篮球
+    <input type="checkbox" name="" id="" checked><input type="checbox" name="" id="" checked>兵乓球
+    
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            //:表单类型 选中对应的表单进行修饰
+            $(":button").css({
+                "background":"blue"
+            })
+            $(":text").css({
+                "background":"#ccc"
+            })
+            //后代选择器
+            $(".box a").css({
+                "color":"red",
+                "font-size":"30px"
+            });
+            //子选择器
+            $(".box2>p").css({
+                "color":"blue",
+                "font-size":"40px"
+            });
+            //相邻选择器
+            $(".box + .box2").css({
+                "width":"100px",
+                "height":"100px",
+                "background":"green"
+            });
+            $("h2~dl").css({
+                "color":"orange"
+            });
+            //通过.netx()
+            $("h2").next("dl").css({
+                "font-weight":"bold"
+            });
+            //
+            $("h2").nextAll("dl").css({
+                "font-size":"40px"
+            });
+        });
+    </script>
+</body>
+</html>

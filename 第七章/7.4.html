@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function() {
+            $("input[type='button']").click(function() {
+                $("img").each(function(index,element) {
+                    $(this).css("border","2px solid red");
+                    $(this).attr("title","第"+(index+1)+"张图片");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <img src="./img/1.jpg" alt="">&nbsp;&nbsp; 
+        <img src="./img/2.jpg" alt="">
+    </p>
+    <input type="button" value="添加边框">
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/asp.css">
+   <script src="./jquery-3.3.1.min.js"></script>
+</head>
+<body>
+        <div class="tou">
+            <h3>  <a href="">会员注册</a></h3>
+        </div>
+        <div class="zc grid">
+            <div class="zcs grid-cell-5">
+                用户账号：<input type="text" id="sj"></a><span>*账号必填</span><br/><br/>
+                设置密码：<input type="text" id="mm"><span>*密码必填</span><br/><br/>
+                确认密码：<input type="text" id="mms"><span>*确认密码必填</span><br/><br/>
+                用户姓名：<input type="text" id="xm"><span>*姓名必填</span><br/><br/>
+                身份证号：<input type="text" id="sf"><span>*身份证必填</span><br/><br/>
+                性别&nbsp&nbsp：<input type="radio" name="" id="">&nbsp男&nbsp&nbsp<input type="radio" name="" id="">&nbsp女<br/><br/>
+                手机号码：<input type="text" id="hm"><span>*手机号必填</span><br/><br/>
+                &nbsp&nbsp校验码：<input type="text">看不清？换一张<br/><br/>
+                <a href=""><img src="./img/but2.jpg" alt=""></a><br/><br/>
+                <input type="checkbox" name="" id="">《家和商城服务条款》<br/>
+            </div>
+            <div grid-cell-1>
+
+                <img src="./img/kf.jpg" alt=""><br/>
+                <img src="./img/kf2.jpg" alt="">
+               
+            </div>
+           
+        </div>
+        <script>
+             $("#sj,#mm,#mms,#xm,#sf,#hm").blur(function(){
+                if($(this).val()=="")
+            {
+                $("span").css("display","block");
+            }
+               
+             })
+        </script>
+</body>
+</html>

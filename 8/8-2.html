@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伸缩框效果</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #list{
+            width: 140px;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+        h3{
+            font-size: 16px;
+            text-align: center;
+        }
+        #list span{
+            font-size: 12px;
+            color: blue;
+        }
+        #list ul li{
+            padding: 10px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: tomato;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="list">
+        <h3>商品服务分类<span>收缩</span></h3>
+        <ul>
+            <li><a href="">鞋包配饰</a></li>
+            <li><a href="">衣服</a></li>
+            <li><a href="">裤子</a></li>
+            <li><a href="">鞋子</a></li>
+        </ul>
+        <h3>珠宝分类<span>收缩</span></h3>
+        <ul>
+            <li><a href="">鞋包配饰</a></li>
+            <li><a href="">衣服</a></li>
+            <li><a href="">裤子</a></li>
+            <li><a href="">鞋子</a></li>
+        </ul>
+        <h3>其它分类<span>收缩</span></h3>
+        <ul>
+            <li><a href="">鞋包配饰</a></li>
+            <li><a href="">衣服</a></li>
+            <li><a href="">裤子</a></li>
+            <li><a href="">鞋子</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(function(){
+            $("h3").click(function(){
+                $(this).next("ul").fadeToggle(1000,function(){
+                   
+                });
+                if($(this).find("span").text()=="收缩")
+                {
+                    $(this).find("span").text("展开");
+                }else{
+                    $(this).find("span").text("收缩");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

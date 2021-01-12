@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选项卡切换</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 300px;
+            border: 1px solid #ccc;
+            height: 300px;
+            margin: 30px;
+        }
+        #box ul li{
+            width: 100px;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            list-style: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .active{
+            background: tomato;
+        }
+        .content div{
+            display: none;
+        }
+        .show{
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li class="active">新闻</li>
+            <li>社会</li>
+            <li>娱乐</li>
+        </ul>
+        <div class="content">
+            <div class="show">新闻列表</div>
+            <div>社会新闻</div>
+            <div>娱乐模块</div>
+        </div>
+    </div>
+<script>
+    $("#box li").mousemove(function(){
+        $(this).addClass("active").siblings("li").removeClass("active");
+        var index=$(this).index();
+        $(".content div").eq(index).addClass("show").siblings("div").removeClass("show");
+    });
+</script>
+
+</body>
+</html>

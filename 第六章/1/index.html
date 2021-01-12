@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		#info{
+			display: none;
+		}
+    </style>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+		 $(document).ready(function(){
+			 $("#btn").click(function(){
+				 $("#info").show(1000);
+			 });
+		  });
+		 $(document).ready(function(){
+			 $("#hidebtn").click(function(){
+				 $("#info").hide(1000);
+			 });
+		  });
+    </script>
+</head>
+<body style="text-align: center;">
+	<input type="button" value="显示" id="btn">
+	<input type="button" value="隐藏" id="hidebtn">
+	<div id="info">
+	    <img src="../图片/3.jpg" width="350">
+	</div>
+</body>
+</html>

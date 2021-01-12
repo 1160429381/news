@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: none;
+            height: 200px;
+        }
+        .current{
+            border: 1px solid #666;
+        }
+    </style>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#btnShow").click(function(){
+                $(".pic:hidden").show().addClass("current");
+            });
+            $("#btnHidden").click(function(){
+                $(".pic:visible").hide();
+            });
+        })
+    </script>
+</head>
+<body>
+    <img src="../图片/3.jpg" class="pic" alt="">
+    <p>
+        <input type="button" value="显示" id="btnShow">
+        <input type="button" value="隐藏" id="btnHidden">
+    </p>
+</body>
+</html>

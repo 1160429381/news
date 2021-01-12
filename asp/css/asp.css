@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tou {
+    height: 30px;
+    background: #eee;
+}
+.tou h3 a{
+    padding: 10px;
+}
+.tou a{
+   font-size: 20px;
+   text-decoration: none;
+   
+}
+span{
+    color: crimson;
+    display: none;
+}
+
+
+.grid{
+    display: flex;
+}
+.grid-cell-1
+{
+    flex-grow: 1;
+}
+.grid-cell-2
+{
+    flex-grow: 2;
+}
+.grid-cell-3
+{
+    flex-grow: 3;
+}
+.grid-cell-4
+{
+    flex-grow: 4;
+}
+.grid-cell-5
+{
+    flex-grow: 5;
+}
+.grid-cell-6
+{
+    flex-grow: 6;
+}
+.zc{
+   
+    margin: 30px;
+}
+.zc .zcs{
+    padding-left: 200px;
+}

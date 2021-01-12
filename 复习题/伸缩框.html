@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伸缩框</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #list li{
+            list-style: none;
+            height:40px ;
+            line-height: 40px;
+        }
+        #list a{
+            color: #666;
+            text-decoration: none;
+        }
+        #list a:hover{
+            color: #00A1D7;
+            
+        }
+        #list{
+            margin: 30px;
+        }
+        #list h6{
+            font-size: 16px;
+        }
+        .active{
+            color:#00A1D7 ;
+        }
+        span{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 列表 -->
+    <div id="list">
+        <h6 class="active">互动管理 <span>隐藏</span></h6>
+        <ul>
+            <li><a href="#">评论管理</a></li>
+            <li><a href="#">弹幕管理</a></li>
+        </ul>
+        <h6 class="active">互动管理 <span>隐藏</span></h6>
+        <ul>
+            <li><a href="#">评论管理</a></li>
+            <li><a href="#">弹幕管理</a></li>
+        </ul>
+        <h6 class="active">互动管理 <span>隐藏</span></h6>
+        <ul>
+            <li><a href="#">评论管理</a></li>
+            <li><a href="#">弹幕管理</a></li>
+        </ul>
+    </div>
+    <script>
+        $("#list h6").click(function(){
+            //获取相邻的下一个元素，用的是next，获取上一个prev
+            $(this).toggleClass("active").next("ul").toggle(1000);
+            //获取span的文本
+            if($(this).find("span").text()=="隐藏")
+            {
+                $(this).find("span").text("显示");
+                // $(this).removeClass("active");
+                // $(this).next("ul").hide();
+            }
+            else{
+                $(this).find("span").text("隐藏");
+                // $(this).addClass("active");
+                // $(this).next("ul").show();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改变背景色和字体颜色</title>
+</head>
+<body>
+    <h1>字体颜色和背景色变化！</h1>
+    <!-- 在函数内传个this，用于指代自己这个标签 -->
+    <select name="" id="" onchange="changeColor(this)">
+        <option value="blue">蓝色</option>
+        <option value="red">红色</option>
+        <option value="purple">紫色</option>
+        <option value="yellow">黄色</option>
+        <option value="orange">橘色</option>
+    </select>
+    <script>
+        function changeColor(obj)
+        {
+            //需要获取到它选中的值 
+            // alert(obj.value);
+            document.bgColor = obj.value;
+            // 颜色值是一个6进制的值，允许类似数值【加减】=》变成另外一种颜色
+            document.fgColor = obj.value+20;
+        }
+
+    </script>
+</body>
+</html>

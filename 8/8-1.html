@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画效果</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+</head>
+<body>
+   <img src="./3.gif" alt=""> 
+   <input type="button" value="显示图片" id="show">
+   <input type="button" value="隐藏图片" id="hide">
+   <script>
+       $("#show").click(function(){
+           $("img").show("slow",function(){
+               $("IMG").css({
+                "border":"10px solid #ccc",
+                "width":"300px",
+                "height":"500px"
+               })
+               
+
+           })
+       });
+       $("#hide").click(function(){
+           $("img").hide("fast",function(){
+               alert("图片隐藏成功！");
+           });
+       })
+   </script>
+</body>
+</html>

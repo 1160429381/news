@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <!-- 案例一 -->
+    <script>
+        $(function(){
+            $("#content").click(function(){
+                $(this).css("font-weight","bold");
+                $(this).css("font-style","italic");
+                $(this).css("background-color","#eee");
+            })
+        });
+    </script>
+    <!-- 案例二 -->
+    <style>
+        .cls1{
+            font-weight: bold;
+            font-style: italic;
+            background-color: #eee;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#content1").click(function(){
+                $(this).addClass("cls1");
+            }); 
+        })
+    </script>
+    <!-- 案例三 -->
+    <script>
+        $(function(){
+            $("#content2").click(function(){
+                $(this).addClass("cls1");
+            });
+            $("#btn").click(function(){
+                $("#content2").removeClass("cls1");
+            })
+        })
+    </script>
+    <!-- 案例四 -->
+    <style>
+        .cls2{
+            font-weight: bold;
+            font-style: italic;
+            border-color: #eee;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#content3").click(function(){
+                $(this).toggleClass("cls2");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="content">
+        Write Less,Do More.
+    </p>
+    <p id="content1">
+        Write Less,Do More.
+    </p>
+    <p id="content2">
+        Write Less,Do More.
+    </p>
+    <input type="button" value="删除样式" id="btn">
+    <p id="content3">
+        Write Less,Do More.
+    </p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>文本111</li>
+    </ul>
+    <input type="button" value="删除最后一张照片" id="btn">
+    <div id="box">
+        <img src="./lastview2.jpg" alt="" >
+    </div>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+
+        $("#btn").click(function(){
+            $("#box img:last").remove();
+        });
+
+
+        $("ul").append("<li>文本222</li>")
+        $("<li>文本3333</li>").appendTo("ul");
+        $("ul").prepend("<h2>哈哈哈</h2>");
+        $("<li>哈哈哈111</li>").prependTo("ul");
+        $("<h1>我是标题</h1>").insertBefore("ul");
+        $("<h3>我是h3标题</h3>").insertAfter("ul");
+        $("ul li:first").replaceWith("<li>被替换文字</li>");
+        // $("img").click(function(){
+        //     alert("!!");
+        //     $(this).clone().appendTo("img");
+        // })
+
+        $("img").click(function(){
+           
+            $(this).clone(true).appendTo("#box");
+        })
+    </script>
+</body>
+</html>

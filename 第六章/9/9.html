@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input.text{
+            border: 1px solid #ccc;
+        }
+    </style>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#pa :button").click(function(){
+                $("#pa :text:enabled").css("border","1px solid red");
+            });
+            $("#pb :button").click(function(){
+                $("#pb :radio:checked").parent().css("background-color","#63c");
+            });
+            $("#pc :button").click(function(){
+                $("#pc :checkbox:checked").parent().css("background-color","#63c");
+            });
+            $("#pd :button").click(function(){
+                var info="你最喜欢的球星是："
+                info += $("#pd :input option:selected").val();
+                alert(info);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <p id="pa">
+            <input type="text" value="可用文本框" class="txt">
+            <input type="text" value="不可用文本框" class="txt" disabled="disabled">
+            <input type="button" value="选取可用文本框">
+        </p>
+        <p id="pb">你是否喜欢旅游：<br/>
+            <label><input type="radio" value="喜欢" name="trip"></label>喜欢
+            <label><input type="radio" value="不喜欢" name="trip"></label>不喜欢
+            <label><input type="radio" value="无所谓" name="trip"></label>无所谓
+            <input type="button" value="显示">
+        </p>
+        <pi id="pc">请选择你最喜欢的运动<br>
+            <label><input type="checkbox" value="跑步" name="sport"></label>跑步
+            <label><input type="checkbox" value="打球" name="sport"></label>打球
+            <label><input type="checkbox" value="登山" name="sport"></label>登山
+            <label><input type="checkbox" value="跳舞" name="sport"></label>跳舞
+            <input type="button" value="显示">
+        </p>
+        <p id="pd">请选择你最喜欢的足球球皇<br>
+            <select>
+                <option value="李毅">李毅</option>
+                <option value="卡卡">卡卡</option>
+                <option value="梅西">梅西</option>
+                <option value="C罗">C罗</option>
+            </select>
+            <input type="button" value="显示">
+        </p>
+    </form>
+</body>
+</html>

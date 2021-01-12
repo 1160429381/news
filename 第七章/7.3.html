@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 自己加 -->
+ <script src="./jquery-3.3.1.min.js"></script>
+
+ <!-- 1 -->
+ <script>
+     $(function(){
+        $("#songs").blur(function(){
+            if($(this).val()!==""){
+                var $li=$("<li>"+$(this).val()+"</li>");
+                $li.prependTo($("ul"));
+                $(this).val("");
+            }
+        })
+     });
+ </script>
+
+ <!-- 2 -->
+ <script>
+     $(function(){
+        $("h3").click(function(){
+            var $ul=$("<ul></ul>");
+            var $li1=$("<li>想起——韩雪</li>");
+            var $li2=$("<li> 没那么简单——黄小琥</li>");
+            var $li3=$("<li>指望——郁可唯</li>");
+            $ul.append($li1);
+            $ul.append($li2);
+            $ul.append($li3);
+            $(this).after($ul);
+        });
+     });
+ </script>
+
+ <!-- 3 -->
+ <script>
+     $(function(){
+        $("input[type='button']").click(function(){
+            var $li=$("<li>光年之外——邓紫棋</li>");
+            $("ul li:last").replaceWith($li);
+        });
+     });
+ </script>
+
+ <!-- 4 -->
+ <script>
+     $(function(){
+      $("img").click(function(){
+          $(this).clone(true).appendTo($("#p1"));
+      });
+    });
+ </script>
+ <!-- 5 -->
+ <script>
+     $(function(){
+         $("input[type='button']").click(function(){
+            $("ul li").remove("ul li:last")
+            // remove中不添加时默认为全部删除！
+         });
+     });
+ </script>
+<body>
+
+<!-- 1 -->
+    <h3>
+        流行歌曲:
+    </h3>
+    <ul>
+        <li>
+            想起——韩雪
+        </li>
+        <li>
+            没那么简单——黄小琥
+        </li>
+        <li>
+            指望——郁可唯
+        </li>
+    </ul>
+    <p>
+        请添加：
+        <input type="text" id="songs">
+    </p>
+
+<!-- 2 -->
+<h3>
+    流行歌曲:
+</h3>
+
+<!-- 3 -->
+<h3> 流行歌曲:</h3>
+<ul>
+    <li>
+        想起——韩雪
+    </li>
+    <li>
+        没那么简单——黄小琥
+    </li>
+    <li>
+        指望——郁可唯
+    </li>
+</ul>
+<input type="button" value="替换">
+
+<!-- 4 -->
+<p id="p1">
+    <!-- 图片自己搞 -->
+    <img src="./1.jpg">
+</p>
+
+<!-- 5 -->
+<h3> 流行歌曲:</h3>
+<ul>
+    <li>
+        想起——韩雪
+    </li>
+    <li>
+        没那么简单——黄小琥
+    </li>
+    <li>
+        指望——郁可唯
+    </li>
+</ul>
+<input type="button" value="删除">
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间说说发表和删除</title>
+</head>
+<body>
+    
+    <input type="text" name="" id="say">
+    <input type="button" value="发表说说" onclick="sendMessage()">
+
+    <h1>说说列表：</h1>
+    <ul id="sendBox">
+        <!-- <li>1楼：今天天气真好 <a href="#">删除该说说</a></li> -->
+    </ul>
+    <script>
+        var num = 1;
+        function sendMessage()
+        {
+            // 获取文本内容
+            var say = document.getElementById("say").value;
+            var sendBox = document.getElementById("sendBox");
+            // 创建一个li标签存储文本内容
+            var li = document.createElement("li");
+            //要求解析HTML代码需要用的是 innerHTML属性
+            li.innerHTML = num+"楼"+say+" <a href='#' onclick='deleteSay(this)'>删除该说说</a>";
+            //生成节点时，需要指定清除是哪个【父节点】
+            sendBox.appendChild(li);
+            // 楼层数累增
+            num++;
+            //清空
+            document.getElementById("say").value = "";
+        }
+
+        //删除说说事件
+        function deleteSay(obj)
+        {
+            //移除节点 【需要告诉它移出的是【哪个位置】，removeChild(移除的子节点)】
+            document.getElementById("sendBox").removeChild(obj.parentNode);
+        }
+
+    </script>
+</body>
+</html>

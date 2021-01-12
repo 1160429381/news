@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+			$("#btntitle").click(function(){
+				$(":header").css("color","#f00");
+			});
+			$("#btneven").click(function(){
+				$("li:even").css("color","#00f");
+			});
+			$("#btnodd").click(function(){
+				$("li:odd").css("color","#f93");
+			});
+		});
+    </script>
+</head>
+<body>
+	<h1>基本过滤器</h1>
+	<ul>
+		<li>基本过滤选择器</li>
+		<li>内容过滤选择器</li>
+		<li>可见性过滤选择器</li>
+		<li>属性过滤选择器</li>
+	</ul>
+	<input type="button" value="标题样式" id="btntitle">
+	<input type="button" value="索引是偶数项样式" id="btneven">
+	<input type="button" value="索引是奇数项样式" id="btnodd">
+</body>
+</html>

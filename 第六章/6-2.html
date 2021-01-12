@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="box">222</div>
+    <div class="boxes"></div>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+
+    </ul>
+    <span>哈哈哈</span>
+    <p>brb</p>
+    <h1>qqqq</h1>
+    <script>
+        $(function(){
+            //基本选择器：id选择器 #id名称
+            $("box").css("background","red");
+            //多个样式标签
+            $("#box").css({"background":"red","width":"100px","height":"100px","color":"#fff"});
+            //类名选择器：.类名
+            $(".boxes").css({"width":"200px","height":"200px","background":"#ccc"})
+            //标签选择器：标签名
+            $("li").css({"padding":"10px","background":"yellow"});
+            //获取所有：
+            $("*").css({"margin":"0","padding":"0"});
+            //
+            $("span,p,h1").css({"color":"red","background":"orange"});
+        })
+    </script>
+</body>
+</html>

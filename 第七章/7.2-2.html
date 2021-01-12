@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <!-- 案例一 -->
+    <script>
+        $(function(){
+            $("input[type='button']").click(function(){
+                $("p").html("<img src='./1.png'/>");
+            });
+        });
+    </script>
+    <!-- 案例二 -->
+    <script>
+        $(function(){
+            $("#userEamil").focus(function(){
+                var text = $(this).val();
+                if(text=="XXX@163.com"){
+                    $(this).val("");
+                }
+            });
+            $("#userEamil").blur(function(){
+                var txt = $(this).val();
+                if(txt==""){
+                    $(this).val("XXX@163.com");
+                }
+            });
+        });
+    </script>
+    <!-- 案例三 -->
+    <script>
+        $(function(){
+            var img = new Array();
+            img[0] = "./1.png";
+            img[1] = "./2.jpg";
+            img[2] = "./3.jpg";
+            img[3] = "./4.jpg";
+            $("img").attr("src",function(){
+                var i = Math.ceil(Math.random()*3);
+                return  img[i];
+            })
+        });
+    </script>
+</head>
+<body>
+    <p></p>
+    <input type="button" value="增加图像"/>
+    <div class="email">
+        <p>
+            <label>邮箱：</label>
+            <input type="text" id="userEamil" value="XXX@163.com"/>
+        </p>
+        <p>
+            <label>密码：</label>
+            <input type="password" name="" id="">
+        </p>
+        <p>
+            <input type="button" value="登录" name="login"/>
+            <a href="#">忘记密码？</a>
+        </p>
+    </div>
+    <img src="" style="width: 50%;">
+</body>
+</html>

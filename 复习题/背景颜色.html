@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ccc").change(function(){
+                $("body").css("background-color",$(this).val());
+            })
+        })
+    </script>
+</head>
+<body>
+    <select id="ccc" ">
+        <option value="blue">蓝色</option>
+        <option value="red">红色</option>
+        <option value="purple">紫色</option>
+        <option value="yellow">黄色</option>
+        <option value="orange">橘色</option>
+    </select>
+</body>
+</html>
